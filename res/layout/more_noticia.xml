@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rn_noticia"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" 
+	android:background="#FFFFFF"
+	>
+
+	<TextView
+		android:id="@+id/rn_tv_titulo"
+		android:layout_width="match_parent"
+		android:layout_height="55dp"
+		android:textStyle="italic|bold"
+		android:gravity="center"
+		android:text="Titulo de la Noticia"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textSize="18dp" />
+
+	<LinearLayout
+		android:id="@+id/rn_ll_image"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#004F9F"
+		android:orientation="vertical" >
+
+		<ImageView
+			android:id="@+id/rn_iv_image"
+			android:layout_width="match_parent"
+			android:layout_height="220dp" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/rn_ll_detalles"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/rn_tv_time"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="20m"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<TextView
+			android:id="@+id/rn_tv_publisher"
+			android:layout_width="match_parent"
+			android:layout_height="39dp"
+			android:gravity="center"
+			android:text="Publicado por: "
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="15dp"
+			android:textStyle="italic" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/rn_tv_resumen"
+		android:layout_width="match_parent"
+		android:layout_height="120dp"
+		android:layout_weight="0.30"
+		android:text="Resumen de la Noticia"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textSize="17dp" />
+
+	<Button
+		android:id="@+id/button1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:autoLink="web"
+		android:clickable="true"
+		android:gravity="center"
+		android:onClick="linkToWeb"
+		android:text="Ir a la Página" />
+
+</LinearLayout>
